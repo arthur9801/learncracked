@@ -17,6 +17,7 @@
 
 	let lastClickedUrl = null;
 		let studySessionClicked = false; // Prevents multiple clicks within the study session
+		let pauseButtonReplaced = false; // Prevent the pause button from being replaced multiple times per study session
 
 	function isVisible(el) {
 		if (!el) return false;
@@ -98,10 +99,49 @@
 					return null;
 				}
 
+				function tryReplacePauseButton() {
+					if (pauseButtonReplaced) return false;
+					const btn = findTimerButton();
+					if (!btn) return false;
+					try {
+						const rect = btn.getBoundingClientRect();
+						const cs = window.getComputedStyle(btn);
+						const w = Math.max(0, Math.round(rect.width || parseFloat(cs.width) || 34));
+						const h = Math.max(0, Math.round(rect.height || parseFloat(cs.height) || 34));
+						const img = document.createElement('img');
+						img.src = 'https://i.imgur.com/p5Rj8cw.png';
+						img.alt = 'Session running';
+						img.setAttribute('data-learncracked-replacement', 'true');
+						if (w) img.style.width = `${w}px`;
+						if (h) img.style.height = `${h}px`;
+						img.style.display = 'inline-block';
+						img.style.objectFit = 'cover';
+						// Preserve shape
+						img.style.borderRadius = cs.borderRadius && cs.borderRadius !== '0px' ? cs.borderRadius : '50%';
+						img.style.verticalAlign = 'middle';
+						img.style.marginTop = cs.marginTop;
+						img.style.marginRight = cs.marginRight;
+						img.style.marginBottom = cs.marginBottom;
+						img.style.marginLeft = cs.marginLeft;
+						img.style.flexShrink = '0';
+						img.style.pointerEvents = 'none';
+
+						btn.replaceWith(img);
+						pauseButtonReplaced = true;
+						console.log(logPrefix, 'Replaced pause button with image');
+						return true;
+					} catch (e) {
+						console.warn(logPrefix, 'Failed to replace pause button:', e);
+						return false;
+					}
+				}
+
 				const existing = findModal();
 				if (existing) {
 					console.log(logPrefix, 'Remove pause modal', reason);
 					existing.remove();
+					// Try to replace the pause button immediately after removing modal
+					tryReplacePauseButton();
 					return true;
 				}
 
@@ -114,6 +154,8 @@
 						console.log(logPrefix, 'Remove pause modal when it shows', reason);
 						modal.remove();
 						observer.disconnect();
+						// Replace the pause button after removing the modal
+						tryReplacePauseButton();
 					} else if (Date.now() - started > maxMs) {
 						observer.disconnect();
 						console.log(logPrefix, 'Stop watching for modal', reason);
@@ -208,8 +250,9 @@
 						}
 				observeForButton(30000, 'route-change');
 			} else {
-						console.log(logPrefix, 'Not study page, reset flag');
-						studySessionClicked = false;
+							console.log(logPrefix, 'Not study page, reset flags');
+							studySessionClicked = false;
+							pauseButtonReplaced = false;
 			}
 	}
 
