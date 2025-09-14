@@ -1,7 +1,7 @@
 {
   "name": "LearnCracked",
   "description": "An extension for LearnCoach that gives you unlimited study time.",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "manifest_version": 3,
   "background": {
     "service_worker": "scripts/background.js"
